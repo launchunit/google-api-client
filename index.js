@@ -40,7 +40,7 @@ function Client(opts) {
   opts.redirect_uri = opts.redirect_uri ||
                       'http://localhost:5000';
 
-  OPTS = opts;
+  OPTS = Object.assign({}, opts);
   INSTANCE = this;
   return this;
 };
