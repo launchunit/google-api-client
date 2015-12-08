@@ -1,14 +1,10 @@
 # google-api-client
-Nodejs client for google OAuth2 based APIs
 
-Google OAuth2 will work for GoogleDrive, GMail, Contacts and many other Google APIs.
+Nodejs client for google OAuth2 based APIs. Google OAuth2 will work for GoogleDrive, GMail, Contacts and many other Google APIs.
 
 ----
 
-
 ## Preparation
-----------
-
 Register your application with [Google's API console](https://console.developers.google.com/apis/)
 - go to *Services* and enable the API you want to use
 - go to *Credentials* and create a oAtuh 2.0 Client ID
