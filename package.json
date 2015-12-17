@@ -2,7 +2,6 @@
   "name": "google-api-client",
   "version": "0.0.1",
   "description": "Nodejs client for google OAuth2 based APIs",
-  "homepage": "https://github.com/knockaway/google-api-client",
   "author": "Karan Sakhuja <kevin.sakhuja@gmail.com> (http://kevify.com)",
   "main": "index.js",
   "scripts": {
