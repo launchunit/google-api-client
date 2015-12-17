@@ -56,6 +56,11 @@ client.getContacts('some-token')
 });
 ```
 
+#### Sample Client for Login
+```bash
+$ node client/index.js
+```
+
 #### Run Tests
 ```bash
 $ npm test

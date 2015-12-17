@@ -1,0 +1,33 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+
+    style.
+      button { padding: 5px 10em; margin-top: 10em }
+
+    script(src='https://apis.google.com/js/client.js?onload=googleAsyncInit', async defer)
+    script.
+      function googleLogin() {
+        auth2.grantOfflineAccess({
+          redirect_uri: 'postmessage',
+          scope: 'https://www.googleapis.com/auth/contacts.readonly'
+        })
+        .then(function(res) {
+          console.log(res);
+          res && res.code &&
+          alert(res.code);
+        });
+      };
+
+      function googleAsyncInit() {
+        gapi.load('auth2', function() {
+          auth2 = gapi.auth2.init({
+            client_id: '660462955517-o4u80fg6lq0aomc95mrbiqesj3u9puoq.apps.googleusercontent.com'
+          });
+        });
+      };
+
+  body
+    center
+      button(onclick='googleLogin()') Google Login
